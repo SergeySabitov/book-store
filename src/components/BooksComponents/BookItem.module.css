@@ -56,7 +56,14 @@
     padding: 0.5rem;
     border-radius: 10px;
     background-color: rebeccapurple;
+    box-shadow: 0 3px 5px rgb(177, 177, 177);
 }
+.add:active {
+    background-color: rgb(59, 25, 94);;
+    transform: scale(0.95);
+    box-shadow: none;
+}
+
 
 .bookNumber {
     display: flex;

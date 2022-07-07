@@ -248,12 +248,20 @@ function App() {
     localStorage.setItem('cartState', JSON.stringify(cartState));
     dispatchCartAction({type: 'REMOVE_HARD', index: index})
   }
-  const filterBooksByUserInput = userInput => {
+  const filterBooksByUserInput = (userInput, usingDefaultBooks = true) => {
+    if (usingDefaultBooks)
     setBooks(prev => {
       let newBooks = DEFAULT_BOOKS_DATA.filter(el=> el.name.toLowerCase().includes(userInput.toLowerCase()) 
       || el.authorName.toLowerCase().includes(userInput.toLowerCase()))
       return [...newBooks]
     })
+    else {
+      setBooks(prev => {
+        let newBooks = prev.filter(el=> el.name.toLowerCase().includes(userInput.toLowerCase()) 
+      || el.authorName.toLowerCase().includes(userInput.toLowerCase()))
+      return [...newBooks]
+      })
+    }
   }
   const onSearchFromInput = userInput => {
     setFilterParam((prev)=>{
@@ -337,15 +345,16 @@ function App() {
         }
       }
     })
-    if (filterParam.search.trim().length > 0) {
-      filterBooksByUserInput(filterParam.search)
-    }
+    
     filterBooksByCategory(item.id)
     if (filterParam.sortPrice) {
       if (filterParam.sortPrice === 'ASC')
         onSortAsc()
       else 
         onSortDes()
+    }
+    if (filterParam.search.trim().length > 0) {
+      filterBooksByUserInput(filterParam.search, false)
     }
   }
 

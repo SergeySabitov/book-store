@@ -271,11 +271,12 @@ function App() {
       }
     })
     setBooks(DEFAULT_BOOKS_DATA);
-    if (userInput.trim().length>0) 
-      filterBooksByUserInput(userInput)
     if (filterParam.categoryId) {
       filterBooksByCategory(filterParam.categoryId)
     } 
+    if (userInput.trim().length>0) 
+      filterBooksByUserInput(userInput, false)
+    
     if (filterParam.sortPrice) {
       if (filterParam.sortPrice === 'ASC')
         onSortAsc()

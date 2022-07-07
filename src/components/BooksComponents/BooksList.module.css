@@ -1,0 +1,16 @@
+.books-list {
+    width: 100%;
+    margin:auto;
+    position: relative;
+    /* margin-top: -10rem; */
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.notFound {
+    margin-top: 10px;
+}
+

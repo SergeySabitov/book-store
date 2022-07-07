@@ -1,0 +1,52 @@
+.title {
+    border-bottom: 1px solid rgb(135, 96, 174);
+    
+}
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.block1 {
+    width: 77%;
+    text-align: left;
+}
+.block2 {
+    width: 17%;
+}
+.inf {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.cnt button {
+    border: 1px solid rgb(135, 96, 174);
+    background-color: white;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.cnt button:hover {
+    background-color: rgb(200, 167, 234);
+}
+.cnt span {
+    margin: 5px;
+}
+
+.block2 button {
+    background-color: white;
+    border: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+.block2 button:hover {
+    background-color: rgb(171, 170, 170);
+}
+
+.price {
+    font-weight: bold;
+}

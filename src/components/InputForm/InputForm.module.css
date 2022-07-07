@@ -1,0 +1,76 @@
+.search {
+    position: relative;
+    margin-top: -12rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    flex-direction: column;
+}
+.search input {
+    font-size: 1.2rem;
+    padding: 3px;
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: 2px solid white;
+    margin: auto;
+}
+.search input:focus {
+    background-color: rgb(210, 181, 238);
+    border: 2px solid white;
+    outline: none;
+}
+.filters {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.filter {
+    width: 45%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 3px;
+}
+.filter button {
+
+    border-radius: 50%;
+    border: 1px solid rgb(229, 200, 255);
+    background-color: white;
+    margin-left: 5px;
+}
+.filter button:hover {
+    background-color: rgb(128, 87, 165); 
+}
+button.active {
+    
+    background-color: rgb(203, 163, 239); 
+}
+button.removeSort {
+    border: 0;
+    margin-left: 1rem;
+
+}
+button.removeSort:hover {
+    background-color: rgb(175, 173, 173);
+}
+
+.select {
+    outline: none;
+    padding: 2px;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+@media (max-width: 768px) {
+    .search {
+        position: relative;
+        margin-top: -12rem;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+  }

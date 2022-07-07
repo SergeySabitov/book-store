@@ -1,0 +1,70 @@
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 20rem;
+  overflow: auto;
+}
+.stick {
+    position: sticky;
+    top: 2rem;
+    min-width: 12rem;
+    margin-bottom: 2rem;
+}
+.list li {
+    border-bottom: 1.5px solid #200d4b;
+}
+.list li:last-child {
+    border-bottom: 0px;
+}
+.amount {
+    
+    padding-top: 1.5rem;
+    border-top: 2px solid #200d4b;
+}
+.buyButton {
+    color: white;
+    font-size: 20px;
+    border: 1px;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgb(171, 129, 214);
+}
+.buyButton:hover {
+    
+    background-color: rebeccapurple;
+}
+.notenough {
+    background-color: rgb(225, 122, 122);
+    padding: 1rem;
+    border-radius: 10px;
+    animation-duration: 1s;
+    animation-name: appear;
+    animation-iteration-count: 1;
+}
+.enough {
+    background-color: rgb(137, 231, 137);
+    padding: 1rem;
+    border-radius: 10px;
+    animation-duration: 1s;
+    animation-name: appear;
+    animation-iteration-count: 1;
+}
+
+.title {
+    margin: 10px;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+@keyframes appear {
+    0%{
+        transform:scale(1);
+    }
+    30%{
+        transform:scale(1.05);
+    }
+    100%{
+        transform:scale(1);
+    }
+}

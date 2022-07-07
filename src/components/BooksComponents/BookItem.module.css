@@ -1,0 +1,76 @@
+
+
+.items {
+    display:flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 1rem;
+    width: 10rem;
+}
+ 
+.img {
+    width: 9rem;
+    height: 13rem;
+    overflow: hidden;
+    margin: auto;
+}
+.bookNameCont {
+    transition: all 0.2s;
+    height: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+}
+.bookNameCont:hover {
+    overflow: visible;
+    z-index: 10;
+    transform: scale(1.05);
+}
+.nameOfBook {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    background-color: white;
+}
+.nameOfBook:hover {
+    box-shadow: 0 3px 5px rgb(177, 177, 177);
+    border-radius: 5px;
+}
+.authorName {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+.img img {
+    width: 100%;
+    height: auto;
+}
+.controls button {
+    position: relative;
+    bottom: 0;
+}
+
+.add {
+    color: white;
+    font-size: 20px;
+    border: 1px;
+    width: 80%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: rebeccapurple;
+}
+
+.bookNumber {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    margin:0.5rem
+}
+
+.price {
+    background-color: rgb(111, 111, 111);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 0 0.5rem 0 0.5rem;
+}

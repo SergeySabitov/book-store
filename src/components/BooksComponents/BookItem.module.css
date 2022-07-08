@@ -81,3 +81,48 @@
     border-radius: 10px;
     padding: 0 0.5rem 0 0.5rem;
 }
+@media screen and (max-width: 768px) {
+    .items {
+        margin: 5px;
+        padding: 0.2rem;
+        width: 9rem;
+        border-radius: 3px;
+        padding-bottom: 0.3rem;
+    }
+    .bookNameCont {
+        transition: all 0.2s;
+        height: 1.3rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.3rem;
+        overflow: hidden;
+    }
+    .nameOfBook {
+        font-size: 1rem;
+    }
+    .authorName {
+        font-style: italic;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    .price {
+        font-weight: bold;
+        font-size: 14px;
+        border-radius: 5px;
+        padding: 0.2rem 0.3rem 0.2rem 0.3rem;
+    }
+    .add {
+        color: white;
+        font-size: 16px;
+        border: 1px;
+        width: 100%;
+        padding: 0.2rem;
+        border-radius: 10px;
+        background-color: rebeccapurple;
+        box-shadow: 0 3px 5px rgb(177, 177, 177);
+    }
+    .add:active {
+        background-color: rgb(59, 25, 94);;
+        transform: scale(0.95);
+        box-shadow: none;
+    }
+}
